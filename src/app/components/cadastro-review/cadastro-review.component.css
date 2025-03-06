@@ -1,0 +1,7 @@
+.card-cadastro{
+    background-color: transparent;
+}
+
+.mat-mdc-card-header{
+    display: unset;
+}

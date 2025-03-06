@@ -1,0 +1,5 @@
+<div class="listagem">
+    @for(review of listaReviews(); track review){
+        <app-elemento-lista [registro]="review" (eventEncerrarAlteracao)="eventEncerrarAlteracao.emit()"></app-elemento-lista>
+    }
+</div>

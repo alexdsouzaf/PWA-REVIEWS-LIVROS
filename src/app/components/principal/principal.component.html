@@ -1,0 +1,11 @@
+<main class="tamanho">
+    <app-barra-acoes class="secao" (eventAdicionarNovaReview)="inclusao.set(true)"></app-barra-acoes>
+
+    @if(inclusao()){
+        <div class="mb-3">
+            <app-cadastro-review (eventEncerrarInclusao)="encerrarInclusao()"></app-cadastro-review>
+        </div>
+    }
+
+    <app-listagem class="secao" [listaReviews]="listaReviews()" (eventEncerrarAlteracao)="carregarListagem()"></app-listagem>
+</main>

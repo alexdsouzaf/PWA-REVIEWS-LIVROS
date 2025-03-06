@@ -1,0 +1,28 @@
+<mat-card appearance="outlined" class="card-cadastro">
+    <mat-card-header>
+        <mat-card-title>
+            <div class="mb-3">
+                <input type="text" [formControl]="this.form.controls.titulo" class="form-control w-100" id="exampleFormControlInput1" placeholder="Título do livro">
+            </div>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <textarea class="form-control" rows="3" [formControl]="this.form.controls.review" placeholder="O que você achou do que leu?"></textarea>
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <button class="btn btn-outline-success me-3" (click)="efetivar()">
+            <i class="bi bi-floppy"></i>
+            Gravar
+        </button>
+        <button class="btn btn-outline-warning" (click)="eventEncerrarInclusao.emit()">
+            <i class="bi bi-x-lg"></i>
+            Cancelar
+        </button>
+        @if(this.form.controls.id.value){
+            <button class="btn btn-outline-danger ms-3" (click)="remover()">
+                <i class="bi bi-x-lg"></i>
+                Remover
+            </button>
+        }
+    </mat-card-actions>
+</mat-card>

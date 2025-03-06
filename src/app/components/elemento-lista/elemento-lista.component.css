@@ -1,0 +1,9 @@
+
+.elemento-lista{
+    background-color: transparent;
+}
+
+.bloco-expandido{
+    display: flex;
+    justify-content: space-between;
+}

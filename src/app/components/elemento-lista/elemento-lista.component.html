@@ -1,0 +1,24 @@
+@if(!alteracao()){
+    <mat-expansion-panel class="elemento-lista mb-3" (opened)="registro().expandido = true" (closed)="registro().expandido = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title> {{registro().titulo}} </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div class="bloco-expandido">
+            <article>
+                <p>{{registro().review}}</p>
+            </article>
+            <aside>
+                <button class="btn btn-outline-warning" (click)="alteracao.set(true)">
+                    <i class="bi bi-pencil"></i>
+                    Editar
+                </button>
+            </aside>
+        </div>
+    </mat-expansion-panel>
+}
+
+@if(alteracao()){
+    <div class="mb-3">
+        <app-cadastro-review [registro]="registro()" (eventEncerrarInclusao)="encerrarAlteracao()"></app-cadastro-review>
+    </div>
+}

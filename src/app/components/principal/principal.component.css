@@ -1,0 +1,10 @@
+.tamanho{
+    width: 50vw;
+}
+
+
+.secao{
+    display: flex;
+    justify-content: center;
+    
+}
