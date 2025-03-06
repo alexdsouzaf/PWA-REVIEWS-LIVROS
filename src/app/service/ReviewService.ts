@@ -5,13 +5,12 @@ import { LocalStorageService } from './localStorageService';
 import { RequestService } from './ResquestService';
 import { inject, Inject, Injectable } from "@angular/core";
 
-@Injectable({providedIn:'root'})
+@Injectable({ providedIn: 'root' })
 export class ReviewService {
     private requestService = inject(RequestService)
-    private configService = inject(ConfigService)
     private localStorageService = inject(LocalStorageService)
 
-    listar_reviews  = async (): Promise<Array<ReviewsLivrosModel>> => environment.usarLocalStorage ? this.localStorageService.listarReviews() :  await this.requestService.get<Array<ReviewsLivrosModel>>(`/listar-reviews`)
+    listar_reviews = async (pFiltroTexto: string = ""): Promise<Array<ReviewsLivrosModel>> => environment.usarLocalStorage ? this.localStorageService.listarReviews(pFiltroTexto) : await this.requestService.get<Array<ReviewsLivrosModel>>(`/listar-reviews`)
 
     consultar_por_id = async (pId: number): Promise<ReviewsLivrosModel> => environment.usarLocalStorage ? this.localStorageService.consultarPorId(pId) : await this.requestService.get<ReviewsLivrosModel>(`/consultar-por-id/${pId}`)
 

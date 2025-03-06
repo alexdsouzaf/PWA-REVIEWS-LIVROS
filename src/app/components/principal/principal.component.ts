@@ -4,10 +4,11 @@ import { BarraAcoesComponent } from "../barra-acoes/barra-acoes.component";
 import { CadastroReviewComponent } from "../cadastro-review/cadastro-review.component";
 import { ReviewsLivrosModel } from '../../Models/ReviewsLivrosModel';
 import { ReviewService } from '../../service/ReviewService';
+import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
 	selector: 'app-principal',
-	imports: [ListagemComponent, BarraAcoesComponent, CadastroReviewComponent],
+	imports: [ListagemComponent, BarraAcoesComponent, CadastroReviewComponent, MatDividerModule],
 	templateUrl: './principal.component.html',
 	styleUrl: './principal.component.css'
 })
@@ -22,8 +23,8 @@ export class PrincipalComponent implements OnInit {
 		await this.carregarListagem()
 	}
 
-	async carregarListagem() {
-		this.listaReviews.set(await this.reviewService.listar_reviews())
+	async carregarListagem(pFiltroTexto: string = "") {
+		this.listaReviews.set(await this.reviewService.listar_reviews(pFiltroTexto))
 	}
 
 	async encerrarInclusao() {

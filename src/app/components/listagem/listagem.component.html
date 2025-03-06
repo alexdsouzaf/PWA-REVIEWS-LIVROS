@@ -1,4 +1,6 @@
 <div class="listagem">
+    <h2>Reviews</h2>
+    <p>Encontrado(s) {{listaReviews().length}} registro(s)</p>
     @for(review of listaReviews(); track review){
         <app-elemento-lista [registro]="review" (eventEncerrarAlteracao)="eventEncerrarAlteracao.emit()"></app-elemento-lista>
     }

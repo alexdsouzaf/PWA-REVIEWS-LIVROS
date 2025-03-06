@@ -10,16 +10,16 @@
         <textarea class="form-control" rows="3" [formControl]="this.form.controls.review" placeholder="O que você achou do que leu?"></textarea>
     </mat-card-content>
     <mat-card-actions align="end">
-        <button class="btn btn-outline-success me-3" (click)="efetivar()">
+        <button class="btn btn-success me-3" (click)="efetivar()">
             <i class="bi bi-floppy"></i>
             Gravar
         </button>
-        <button class="btn btn-outline-warning" (click)="eventEncerrarInclusao.emit()">
+        <button class="btn btn-warning" (click)="eventEncerrarInclusao.emit()">
             <i class="bi bi-x-lg"></i>
             Cancelar
         </button>
         @if(this.form.controls.id.value){
-            <button class="btn btn-outline-danger ms-3" (click)="remover()">
+            <button class="btn btn-danger ms-3" (click)="remover()">
                 <i class="bi bi-x-lg"></i>
                 Remover
             </button>

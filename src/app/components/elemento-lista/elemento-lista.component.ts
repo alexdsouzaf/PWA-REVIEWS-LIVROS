@@ -4,6 +4,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatIconModule } from '@angular/material/icon';
 import { ReviewsLivrosModel, ReviewsLivrosModelForm } from '../../Models/ReviewsLivrosModel';
 import { CadastroReviewComponent } from "../cadastro-review/cadastro-review.component";
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @Component({
 	selector: 'app-elemento-lista',
@@ -11,7 +12,8 @@ import { CadastroReviewComponent } from "../cadastro-review/cadastro-review.comp
 		MatButtonModule,
 		MatIconModule,
 		MatExpansionModule,
-		CadastroReviewComponent
+		CadastroReviewComponent,
+		MatTooltipModule
 	],
 	templateUrl: './elemento-lista.component.html',
 	styleUrl: './elemento-lista.component.css'

@@ -1,5 +1,5 @@
 <main class="tamanho">
-    <app-barra-acoes class="secao" (eventAdicionarNovaReview)="inclusao.set(true)"></app-barra-acoes>
+    <app-barra-acoes class="secao" (eventAdicionarNovaReview)="inclusao.set(true)" (eventPesquisar)="carregarListagem($event)"></app-barra-acoes>
 
     @if(inclusao()){
         <div class="mb-3">
@@ -7,5 +7,6 @@
         </div>
     }
 
+    <mat-divider></mat-divider>
     <app-listagem class="secao" [listaReviews]="listaReviews()" (eventEncerrarAlteracao)="carregarListagem()"></app-listagem>
 </main>
