@@ -1,23 +1,20 @@
 import { Injectable } from "@angular/core";
+import { environment } from "../../environments/environment.development";
 
-// TODO implementar um service que salva as coisas no localstorage
 // * Service generico de requisicoes http
 @Injectable({ providedIn: 'root' })
 export class RequestService {
-	//todo jogar o endereco da api para um arquivo config
-	private urlBase: string = "http://127.0.0.1:5000"
 	private defaultHeaders: HeadersInit = {
 		"Content-Type": "application/json",
 	}
 
 	private async request<T>(endpoint: string, method: string, body?: any, customHeader?: HeadersInit) {
-		const url = `${this.urlBase}${endpoint}`
+		const url = `${environment.apiUrl}${endpoint}`
 		const headers = { ...this.defaultHeaders, ...customHeader }
 
 		const options: RequestInit = {
 			method,
 			headers,
-			//todo nao eh legal esse "registro" hardcoded, soh ta ali por que eh esse objeto que a api espera deserializar
 			body: body ? JSON.stringify({ registro: body }) : undefined
 		}
 
