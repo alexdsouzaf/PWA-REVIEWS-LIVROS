@@ -1,15 +1,19 @@
 <div class="acoes">
+    <h2>Adicione uma nova resenha ou procure por alguma :)</h2>
     <div class="input-group mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="Busque por um título" [formControl]="pesquisaPorPalavra">
+        <input type="email" class="form-control" id="floatingInput" placeholder="Busque por um título"
+            [formControl]="pesquisaPorPalavra">
         <button class="btn btn-secondary" type="button" matTooltip="Pesquisar" (click)="pesquisar()">
             <i class="bi bi-search"></i>
         </button>
-        <button class="btn btn-secondary" type="button" matTooltip="Limpar campo de pesquisa" (click)="pesquisaPorPalavra.reset()">
+        <button class="btn btn-secondary" type="button" matTooltip="Limpar campo de pesquisa"
+            (click)="pesquisaPorPalavra.reset()">
             <i class="bi bi-x-lg"></i>
         </button>
-        <button class="btn btn-primary" type="button" matTooltip="Adicione um novo livro para dar sua resenha" (click)="eventAdicionarNovaReview.emit()">
+        <button class="btn btn-primary" type="button" matTooltip="Adicione um novo livro para dar sua resenha"
+            (click)="eventAdicionarNovaReview.emit()">
             <i class="bi bi-plus"></i>
-            Adicionar uma review
+            Adicionar uma resenha
         </button>
     </div>
 </div>

@@ -1,0 +1,49 @@
+.principal {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+body {
+    background-color: rgb(19, 19, 19);
+    background: linear-gradient(0deg, rgba(19, 19, 19, 1) 0%, rgba(56, 56, 58, 1) 20%, rgba(255, 255, 255, 1) 100%);
+}
+
+.titulo-alinhado {
+    display: flex;
+}
+
+.h1-alinhado {
+    align-content: center;
+}
+
+.form-control {
+    background-color: azure;
+}
+
+
+.navbar a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    /* Cor do texto */
+    padding: 5px 0;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #272727;
+    /* Cor do sublinhado */
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
