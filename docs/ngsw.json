@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1741288322328,
+  "timestamp": 1741452384555,
   "index": "/PWA-REVIEWS-LIVROS/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/PWA-REVIEWS-LIVROS/favicon.ico",
         "/PWA-REVIEWS-LIVROS/index.html",
-        "/PWA-REVIEWS-LIVROS/main-BFDRE4EO.js",
+        "/PWA-REVIEWS-LIVROS/main-GXSDBG4O.js",
         "/PWA-REVIEWS-LIVROS/manifest.webmanifest",
         "/PWA-REVIEWS-LIVROS/polyfills-FFHMD2TL.js",
         "/PWA-REVIEWS-LIVROS/scripts-EEEIPNC3.js",
-        "/PWA-REVIEWS-LIVROS/styles-437SWGIV.css"
+        "/PWA-REVIEWS-LIVROS/styles-NH3WXO5X.css"
       ],
       "patterns": []
     },
@@ -54,14 +54,14 @@
     "/PWA-REVIEWS-LIVROS/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "/PWA-REVIEWS-LIVROS/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "/PWA-REVIEWS-LIVROS/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/PWA-REVIEWS-LIVROS/index.html": "e50df1f74151c9050a3c51bc40f214ba0ddeaa45",
-    "/PWA-REVIEWS-LIVROS/main-BFDRE4EO.js": "4527a519a19d2a2a05e6ab3cc58201915ce72eb3",
+    "/PWA-REVIEWS-LIVROS/index.html": "fabf1b4e409e27b1674cc6e3f154b4761eba62b9",
+    "/PWA-REVIEWS-LIVROS/main-GXSDBG4O.js": "e89bf2931f05ebf9a9bf8b7a63f79f2cb2f90b53",
     "/PWA-REVIEWS-LIVROS/manifest.webmanifest": "29e0b0b58cb63cb7811965057d0a8ef04552638f",
     "/PWA-REVIEWS-LIVROS/media/bootstrap-icons-OCU552PF.woff": "d5831fd39baf13aff7626e483b9a089730f18604",
     "/PWA-REVIEWS-LIVROS/media/bootstrap-icons-X6UQXWUS.woff2": "020c3c6f9280a315e8425d7f92e15bcd0cdda1b2",
     "/PWA-REVIEWS-LIVROS/polyfills-FFHMD2TL.js": "f49b49a155bc7d192db62a4c15d0a612b460a667",
     "/PWA-REVIEWS-LIVROS/scripts-EEEIPNC3.js": "2318ded8c885787a1645385a82c1ca883c359034",
-    "/PWA-REVIEWS-LIVROS/styles-437SWGIV.css": "fb516b4e07277a88ca6def7e68e9e88317a57ffe"
+    "/PWA-REVIEWS-LIVROS/styles-NH3WXO5X.css": "b5573e9d3b78ba2311e4be82c1af2adbc6ff356d"
   },
   "navigationUrls": [
     {
